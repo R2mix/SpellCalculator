@@ -22,7 +22,7 @@ let effet = 0;
 
 function setup() {
 
-  createCanvas(1000, 720);
+  createCanvas(600, 600);
 
   for (let i = 0; i < 4; i++) {
     coutImage[i] = loadImage(coutFile[i]);
@@ -70,6 +70,9 @@ function draw() {
 
 
 function calcul() {
+
+  effet += 1;
+
   if (currentArgument1Image == 1) range += 10;
   if (currentArgument1Image == 2) zone += 5;
   if (currentArgument1Image == 3) time += 1;
@@ -117,23 +120,23 @@ let arg1X, arg1Y;
 function arg1affiche() {
 
   if (currentCoutImage == 0) {
-    arg1X = 415;
-    arg1Y = 415;
+    arg1X = 215;
+    arg1Y = 355;
     image(argumentImage[currentArgument1Image], arg1X + 24, arg1Y - 22);
   }
   if (currentCoutImage == 1) {
-    arg1X = 410;
-    arg1Y = 450;
+    arg1X = 210;
+    arg1Y = 390;
     image(argumentImage[currentArgument1Image], arg1X + 22, arg1Y - 22);
   }
   if (currentCoutImage == 2) {
-    arg1X = 410;
-    arg1Y = 480;
+    arg1X = 210;
+    arg1Y = 420;
     image(argumentImage[currentArgument1Image], arg1X + 20, arg1Y - 21);
   }
   if (currentCoutImage == 3) {
-    arg1X = 350;
-    arg1Y = 440;
+    arg1X = 150;
+    arg1Y = 380;
     image(argumentImage[currentArgument1Image], arg1X + 20, arg1Y - 17);
   }
 }
@@ -153,18 +156,18 @@ let arg2X, arg2Y;
 function arg2affiche() {
 
   if (currentCoutImage == 1) {
-    arg2X = 580;
-    arg2Y = 270;
+    arg2X = 380;
+    arg2Y = 210;
     image(argumentImage[currentArgument2Image], arg2X + 27, arg2Y - 19);
   }
   if (currentCoutImage == 2) {
-    arg2X = 500;
-    arg2Y = 210;
+    arg2X = 300;
+    arg2Y = 150;
     image(argumentImage[currentArgument2Image], arg2X + 21, arg2Y - 19);
   }
   if (currentCoutImage == 3) {
-    arg2X = 500;
-    arg2Y = 190;
+    arg2X = 300;
+    arg2Y = 130;
     image(argumentImage[currentArgument2Image], arg2X + 20, arg2Y - 20);
   }
 }
@@ -182,13 +185,13 @@ let arg3X, arg3Y;
 function arg3affiche() {
 
   if (currentCoutImage == 2) {
-    arg3X = 640;
-    arg3Y = 320;
+    arg3X = 440;
+    arg3Y = 260;
     image(argumentImage[currentArgument3Image], arg3X + 24, arg3Y - 25);
   }
   if (currentCoutImage == 3) {
-    arg3X = 650;
-    arg3Y = 280;
+    arg3X = 450;
+    arg3Y = 220;
     image(argumentImage[currentArgument3Image], arg3X + 21, arg3Y - 22);
   }
 }
@@ -207,8 +210,8 @@ let arg4X, arg4Y;
 function arg4affiche() {
 
   if (currentCoutImage == 3) {
-    arg4X = 650;
-    arg4Y = 445;
+    arg4X = 450;
+    arg4Y = 385;
     image(argumentImage[currentArgument4Image], arg4X + 20, arg4Y - 22);
   }
 }
