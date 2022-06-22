@@ -1,7 +1,7 @@
 
 let coutFile = ["cout1.svg", "cout2.svg", "cout3.svg", "cout4.svg"];
 let couleurFile = ["rouge.svg", "vert.svg", "bleu.svg", "blanc.svg", "jaune.svg", "pure.svg", "multi.svg"];
-let argumentFile = ["costume1.svg", "zone.svg", "effet.svg", "temps.svg", "portée.svg"];
+let argumentFile = ["costume1.svg", "portee.svg", "zone.svg", "temps.svg" , "effet.svg"];
 
 let coutImage = [];
 let couleurImage = [];
@@ -22,7 +22,7 @@ let effet = 0;
 
 function setup() {
 
-  createCanvas(600, 600);
+  createCanvas(displayWidth, displayHeight);
 
   for (let i = 0; i < 4; i++) {
     coutImage[i] = loadImage(coutFile[i]);
@@ -40,7 +40,7 @@ function draw() {
   background(0);
   imageMode(CENTER);
   push();
-  translate(width / 2, height / 2);
+  translate(300, 300);
   image(coutImage[currentCoutImage], 20, -20);
   image(couleurImage[currentCouleurImage], 20, -20);
   pop();
@@ -49,6 +49,9 @@ function draw() {
   arg2affiche();
   arg3affiche();
   arg4affiche();
+ 
+
+  
   range = 0;
   zone = 0;
   time = 0;
