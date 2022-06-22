@@ -22,7 +22,7 @@ let effet = 0;
 
 function setup() {
 
-  createCanvas(displayWidth, displayHeight);
+  createCanvas(600, 600);
 
   for (let i = 0; i < 4; i++) {
     coutImage[i] = loadImage(coutFile[i]);
